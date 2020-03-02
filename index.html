@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quirky Piano</title>
+        <link rel="stylesheet"  type="text/css" href="style.css">
+    </head>
+
+    <!-- The body tag contains the whole content of the page. -->
+    <body id="bodyBackground">
+        <header>
+            <nav>
+                <h1>Quirky Piano</h1>
+            </nav>
+        </header>
+
+        <!-- In this section contains the main content of web page. -->
+        <section>
+            <ul class="set">
+                <li onclick="knock1()" class="white b"></li>
+                <li onclick="findJerry()"class="black as"></li>
+                <li onclick="baby1()" class="white a"></li>
+                <li onclick="tooLazy()" class="black gs"></li>
+                <li onclick="bottle1()" class="white g"></li>
+                <li onclick="changeBackground()" class="black fs"></li>
+                <li onclick="broken()" class="white f"></li>
+                <li onclick="horse1()" class="white e"></li>
+                <li onclick="foul1()" class="black ds"></li>
+                <li id="whiteB" onclick="changeColor()" class="white d"></li>
+                <li onclick="displayImage()" class="black cs"></li>
+                <li onclick="car1()" class="white c"></li>
+            </ul>
+            <!-- In this div comments and images are displayed. -->
+            <div class="comments">
+                    <article><p id="displayComment"></p></article>
+                    <div class="jerry"><img id="jerryIMG" src="jerry.png" width="40" height="40" style="display:none;"></div>
+                    <div class="tom"><img id="tomIMG" src="tom.png" width="60" height="60" style="display:none;"></div>
+            </div>
+        </section>
+        <!-- This includes javascript into HTML. -->
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
